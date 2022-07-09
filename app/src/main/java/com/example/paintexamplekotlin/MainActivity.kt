@@ -28,10 +28,9 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         bindings.apply {
-            btnBlack.setOnClickListener {
-                Toast.makeText(applicationContext, "Black Clicked", Toast.LENGTH_SHORT).show()
-                paintBrush.color = Color.BLACK
-                currentColor(paintBrush.color)
+            btnGreen.setOnClickListener {
+                Toast.makeText(applicationContext, "Red Clicked", Toast.LENGTH_SHORT).show()
+                paintBrush.color = Color.GREEN
             }
             btnRed.setOnClickListener {
                 Toast.makeText(applicationContext, "Red Clicked", Toast.LENGTH_SHORT).show()
@@ -41,6 +40,11 @@ class MainActivity : AppCompatActivity() {
             btnBlue.setOnClickListener {
                 Toast.makeText(applicationContext, "Blue Clicked", Toast.LENGTH_SHORT).show()
                 paintBrush.color = Color.BLUE
+                currentColor(paintBrush.color)
+            }
+            btnBlack.setOnClickListener {
+                Toast.makeText(applicationContext, "Black Clicked", Toast.LENGTH_SHORT).show()
+                paintBrush.color = Color.BLACK
                 currentColor(paintBrush.color)
             }
             btnEraser.setOnClickListener {

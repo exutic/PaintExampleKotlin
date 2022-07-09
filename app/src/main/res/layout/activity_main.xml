@@ -16,6 +16,13 @@
         android:padding="5dp">
 
         <ImageButton
+            android:id="@+id/btnGreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/curve_green" />
+
+        <ImageButton
             android:id="@+id/btnRed"
             android:layout_width="50dp"
             android:layout_height="50dp"
